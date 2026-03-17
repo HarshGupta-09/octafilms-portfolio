@@ -71,7 +71,7 @@ const Footer = () => {
           <p>
             Developed by{" "}
             <span className="text-red-500 font-medium">
-              Harsh Gupta
+             @Harsh Gupta
             </span>
           </p>
 
