@@ -18,21 +18,49 @@ function App() {
 
 
   return (
-   <>
-   <Navbar/>
-   <Hero/>
-   <About/>
-   <Services/>
-   <Portfolio/>
-   <Projects/>
-   <Clients/>
-   <Testimonials/>
-   <Process/>
-   <Team/>
-   <Contact/>
-   <Footer/>
-   
-   </>
+ <>
+  <Navbar/>
+
+  <Hero/>
+
+  <section id="about">
+    <About/>
+  </section>
+
+  <section id="services">
+    <Services/>
+  </section>
+
+  <section id="portfolio">
+    <Portfolio/>
+  </section>
+
+  <section id="projects">
+    <Projects/>
+  </section>
+
+  <section id="clients">
+    <Clients/>
+  </section>
+
+  <section id="testimonials">
+    <Testimonials/>
+  </section>
+
+  <section id="process">
+    <Process/>
+  </section>
+
+  <section id="team">
+    <Team/>
+  </section>
+
+  <section id="contact">
+    <Contact/>
+  </section>
+
+  <Footer/>
+</>
   )
 }
 
