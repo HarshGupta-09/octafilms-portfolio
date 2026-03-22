@@ -41,6 +41,8 @@ const Projects = () => {
               Featured <span className="text-red-500">Projects</span>
             </h2>
             <div className="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
+            {/* <p className="text-gray-400 font-extrabold mt-6">Stories we’ve crafted. Moments we’ve captured.</p> */}
+
           </div>
 
           {/* Grid */}

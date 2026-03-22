@@ -53,26 +53,26 @@ const About = () => {
           <div className="space-y-6  text-gray-300">
             <p>
               <span className="text-white font-bold">
-                OCTAFILMS  is a creative media production company specializing in cinematic
-              storytelling, photography, and digital media content.
+             OCTAFILMS is a visual storytelling studio built on the idea that every frame should mean something.
               </span>{" "}
             
             </p>
 
             <p className="text-white font-bold"> 
-              We work across events, brands, personalities, and organizations to
-              capture impactful visuals that connect with audiences.
+             From high-energy events to deeply personal narratives, we create cinematic experiences that connect, engage, and leave an impact.
             </p>
 
             <p className="text-white font-bold">
-              Our team focuses on delivering high-quality visual narratives
-              through professional filmmaking techniques, creative direction,
-              and modern editing workflows.
+            Our work blends storytelling, emotion, and precision — turning moments into timeless visuals.
+            </p>
+            <p className="text-white font-bold">
+            We don’t just document.
+We make people feel.
             </p>
 
             <p className="text-red-500 text-xl font-medium">
-              We believe every story deserves to be told with precision, emotion,
-              and cinematic excellence.
+              
+Every story deserves to be felt — not just seen.
             </p>
           </div>
         </div>
