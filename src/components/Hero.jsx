@@ -28,12 +28,13 @@ const Hero = () => {
 
         {/* Subtitle */}
         <h2 className="text-white text-xl md:text-4xl font-medium mb-4">
-          Capturing Stories. Creating Impact.
+         We don’t just capture visuals.
+We craft stories that stay.
         </h2>
 
         {/* Description */}
         <p className="text-gray-300 mb-8 font-bold">
-          Premium Photography, Cinematography & Media Production
+         Cinematic Storytelling • Photography • Visual Experiences
         </p>
 
         {/* Buttons */}
