@@ -51,7 +51,7 @@ const Navbar = () => {
         href="#contact"
         className="hidden md:block bg-red-600 hover:bg-red-700 transition text-white px-5 py-2 rounded-full text-sm font-semibold"
       >
-        WORK WITH US
+       Start a Project
       </a>
 
       {/* Mobile Menu Button */}

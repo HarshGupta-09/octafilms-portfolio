@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 
-const categories = ["ALL", "EVENTS", "CONCERTS", "FILMS", "POLITICAL"];
+const categories = ["All Work", "Live Events", "Concert Films", "FILMS", "Campaigns"];
 
 const projects = [
   {
     id: 1,
-    title: "TEDx Event Coverage",
-    location: "Delhi School of Economics – Delhi University",
+    title: "Event Photography",
+    location: "Capturing energy, emotion, and moments that matter.",
     category: "EVENTS",
     image:
       "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
   },
   {
     id: 2,
-    title : "Live Concert Production",
-    location : "Multicamera Concert Coverage with cinematic grading",
+    title : " Cinematic Videography",
+    location : "High-impact films designed to manage to engage and inspire ",
     category: "CONCERTS",
     image:
       "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
@@ -22,7 +22,8 @@ const projects = [
   {
     id: 3,
     title : "Political Campaign",
-    location : "Complete campaign media coverage and digital content",
+   
+    location : "Powerful visuals that shape perception and influence",
 
     category: "CONCERTS",
     image:
@@ -30,20 +31,26 @@ const projects = [
   },
   {
     id: 4,
-    title : "Corporate Brand Flim",
-    location : "Cinematic brand storytelling for coperate identity",
+    title : "Brand & Social Content",
+
+    location : "Scroll-stopping content built for digital platforms.",
     category: "FILMS",
     image:
       "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
   },
   {
     id: 5,
+    title : "Documentary & Short Films",
+    location : "Real stories, told with depth and cinematic precision.",
     category: "EVENTS",
     image:
       "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
   },
   {
     id: 6,
+    title : "Editing & Post Production",
+    location : "Where raw footage becomes a compelling story.",
+
     category: "FILMS",
     image:
       "https://images.unsplash.com/photo-1485846234645-a62644f84728",
@@ -51,10 +58,10 @@ const projects = [
 ];
 
 const Portfolio = () => {
-  const [active, setActive] = useState("ALL");
+  const [active, setActive] = useState("All Work");
 
   const filtered =
-    active === "ALL"
+    active === "All Work"
       ? projects
       : projects.filter((item) => item.category === active);
 
@@ -69,7 +76,7 @@ const Portfolio = () => {
           </h2>
           <div className="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
           <p className="text-gray-400 font-extrabold mt-6">
-            Explore our diverse portfolio of cinematic productions
+           Stories we’ve crafted. Moments we’ve captured.
           </p>
         </div>
 
@@ -92,7 +99,7 @@ const Portfolio = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {filtered.map((item) => (
             <div
               key={item.id}

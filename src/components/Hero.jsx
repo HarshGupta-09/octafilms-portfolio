@@ -41,11 +41,11 @@ We craft stories that stay.
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           
           <button className="bg-red-600 cursor-pointer transition-all duration-200 ease-linear hover:bg-red-700 text-white px-7 py-4 rounded-full font-semibold">
-            VIEW PORTFOLIO
+            Watch Our Work
           </button>
 
           <button className="border cursor-pointer transition-all duration-500 border-white text-white px-7 py-4 rounded-full font-semibold hover:bg-white hover:text-black">
-            WORK WITH US
+          Start a Project
           </button>
 
         </div>

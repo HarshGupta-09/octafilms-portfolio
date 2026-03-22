@@ -4,35 +4,35 @@ import { Camera, Video, Users, Sparkles, Film, Clapperboard } from "lucide-react
 const services = [
   {
     icon: <Camera size={28} />,
-    title: "Event Photography",
-    desc: "Corporate events, conferences, TEDx events, seminars, and social gatherings.",
+    title: "Visual Storytelling",
+    desc: "Every frame is crafted with purpose and emotion.",
   },
   {
     icon: <Video size={28} />,
-    title: "Cinematic Videography",
-    desc: "High-quality cinematic video production for events and brands.",
+    title: "Cinematic Production",
+    desc: "High-end filming techniques that elevate your story.",
   },
   {
     icon: <Users size={28} />,
-    title: "Political Campaign Media",
-    desc: "Campaign photography, digital campaign visuals, and storytelling.",
+    title: "Creative Direction",
+    desc: "We don’t just shoot — we design the entire visual experience.",
    
   },
   {
     icon: <Sparkles size={28} />,
-    title: "Brand & Social Media Content",
-    desc: "Creative content for Instagram, YouTube, LinkedIn and digital platforms.",
+    title: "Seamless Execution",
+    desc: "From concept to final cut, everything flows perfectly.",
   },
-  {
-    icon: <Film size={28} />,
-    title: "Documentary & Short Films",
-    desc: "Professional storytelling and documentary production.",
-  },
-  {
-    icon: <Clapperboard size={28} />,
-    title: "Editing & Post Production",
-    desc: "Professional color grading, cinematic editing, and visual storytelling.",
-  },
+  // {
+  //   icon: <Film size={28} />,
+  //   title: "Documentary & Short Films",
+  //   desc: "Professional storytelling and documentary production.",
+  // },
+  // {
+  //   icon: <Clapperboard size={28} />,
+  //   title: "Editing & Post Production",
+  //   desc: "Professional color grading, cinematic editing, and visual storytelling.",
+  // },
 ];
 
 const Services = () => {
@@ -52,7 +52,7 @@ const Services = () => {
         </div>
 
         {/* Grid */}
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
           {services.map((item, index) => (
             <div
               key={index}
