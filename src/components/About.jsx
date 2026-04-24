@@ -43,7 +43,7 @@ const About = () => {
           {/* Image */}
           <div>
             <img
-              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+              src="/public/about.jpeg"
               alt="filmmaking"
               className="rounded-xl w-full object-cover hover:scale-105 transition duration-500"
             />

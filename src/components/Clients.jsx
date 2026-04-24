@@ -3,10 +3,10 @@ import React from "react";
 const clients = [
   { name: "TEDx" },
   { name: "DU" },
-  { name: "PC" },
-  { name: "CB" },
-  { name: "IA" },
-  { name: "EO" },
+  { name: "ABVP" },
+  { name: "NSUI" },
+  { name: "BJP" },
+  { name: "CONGRESS" },
 ];
 
 const Clients = () => {

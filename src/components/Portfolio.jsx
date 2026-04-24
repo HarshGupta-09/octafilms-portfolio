@@ -1,59 +1,91 @@
 import React, { useState } from "react";
 
-const categories = ["All Work", "Live Events", "Concert Films", "FILMS", "Campaigns"];
+const categories = ["All Work", "EVENTS", "CONCERTS", "FILMS"];
 
 const projects = [
   {
     id: 1,
-    title: "Event Photography",
-    location: "Capturing energy, emotion, and moments that matter.",
+    title: "Political Campaign",
+    location: "",
     category: "EVENTS",
-    image:
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+    image: "/public/photos/_DSC0171 (1).jpg.jpeg",
   },
   {
     id: 2,
-    title : " Cinematic Videography",
-    location : "High-impact films designed to manage to engage and inspire ",
+    title: "Event Photography",
+    location: "",
     category: "CONCERTS",
-    image:
-      "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2",
+    image: "/public/photos/new10.jpeg",
   },
   {
     id: 3,
-    title : "Political Campaign",
-   
-    location : "Powerful visuals that shape perception and influence",
-
+    title: "Political Campaign",
+    location: "",
     category: "CONCERTS",
-    image:
-      "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3",
+    image: "/public/photos/_DSC9687.jpg.jpeg",
   },
   {
     id: 4,
-    title : "Brand & Social Content",
-
-    location : "Scroll-stopping content built for digital platforms.",
+    title: "Political Campaign",
+    location: "",
     category: "FILMS",
-    image:
-      "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+    image: "/public/photos/new8.jpeg",
   },
   {
     id: 5,
-    title : "Documentary & Short Films",
-    location : "Real stories, told with depth and cinematic precision.",
+    title: "Political Campaign",
+    location: "",
     category: "EVENTS",
-    image:
-      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
+    image: "/public/photos/IMG_0822.jpg.jpeg",
   },
   {
     id: 6,
-    title : "Editing & Post Production",
-    location : "Where raw footage becomes a compelling story.",
-
+    title: "Political Campaign",
+    location: "",
     category: "FILMS",
-    image:
-      "https://images.unsplash.com/photo-1485846234645-a62644f84728",
+    image: "/public/photos/IMG_6697 (1).jpg.jpeg",
+  },
+  {
+    id: 7,
+    title: "Political Campaign",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/point of view_Agam (12) (1).jpg.jpeg",
+  },
+  {
+    id: 8,
+    title: "Political Campaign",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/new1.jpg.jpeg",
+  },
+  {
+    id: 9,
+    title: "Event Photography",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/new9.jpeg",
+  },
+  {
+    id: 10,
+    title: "Event Photography",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/new3.jpeg",
+  },
+  {
+    id: 11,
+    title: "Event Photography",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/NEW4.jpeg",
+  },
+  {
+    id: 12,
+    title: "Event Photography",
+    location: "",
+    category: "FILMS",
+    image: "/public/photos/NEW7.jpeg",
   },
 ];
 
@@ -76,7 +108,7 @@ const Portfolio = () => {
           </h2>
           <div className="w-20 h-1 bg-red-500 mx-auto mt-4"></div>
           <p className="text-gray-400 font-extrabold mt-6">
-           Stories we’ve crafted. Moments we’ve captured.
+            Stories we’ve crafted. Moments we’ve captured.
           </p>
         </div>
 
@@ -86,8 +118,7 @@ const Portfolio = () => {
             <button
               key={cat}
               onClick={() => setActive(cat)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition
-              ${
+              className={`px-5 py-2 rounded-full text-sm font-medium transition ${
                 active === cat
                   ? "bg-red-600 text-white"
                   : "bg-gray-800 text-gray-300 hover:bg-gray-700"
@@ -105,28 +136,17 @@ const Portfolio = () => {
               key={item.id}
               className="relative group overflow-hidden rounded-xl"
             >
-              
               {/* Image */}
               <img
                 src={item.image}
-                alt=""
+                alt={item.title}
                 className="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
               />
 
               {/* Overlay */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4 translate-y-6 group-hover:translate-y-0">
-                
-                {item.title && (
-                  <>
-                    <h3 className="text-lg font-semibold">
-                      {item.title}
-                    </h3>
-                    <p className="text-sm text-gray-300">
-                      {item.location}
-                    </p>
-                  </>
-                )}
-
+                <h3 className="text-lg font-semibold">{item.title}</h3>
+                <p className="text-sm text-gray-300">{item.location}</p>
               </div>
             </div>
           ))}

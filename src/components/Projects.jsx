@@ -101,7 +101,7 @@ const Projects = () => {
 
           <div>
             <h3 className="text-4xl md:text-5xl font-bold">
-              150+
+              30+
             </h3>
             <p className="mt-2 text-sm md:text-base tracking-wide uppercase">
               Projects Completed
@@ -110,7 +110,7 @@ const Projects = () => {
 
           <div>
             <h3 className="text-4xl md:text-5xl font-bold">
-              50+
+              30+
             </h3>
             <p className="mt-2 text-sm md:text-base tracking-wide uppercase">
               Happy Clients
@@ -119,7 +119,7 @@ const Projects = () => {
 
           <div>
             <h3 className="text-4xl md:text-5xl font-bold">
-              5+
+              3+
             </h3>
             <p className="mt-2 text-sm md:text-base tracking-wide uppercase">
               Years Experience

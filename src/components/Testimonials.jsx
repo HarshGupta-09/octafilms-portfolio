@@ -4,18 +4,18 @@ import { Quote } from "lucide-react";
 const testimonials = [
   {
     text: "OCTAFILMS captured our event with incredible professionalism and creativity. The visuals truly told our story.",
-    name: "Sarah Johnson",
+    name: "Alok Jhangra",
     role: "Event Director, TEDx",
   },
   {
     text: "Their cinematic approach to campaign media gave us a competitive edge. Highly professional team.",
-    name: "Rajesh Kumar",
-    role: "Campaign Manager",
+    name: "Govind Tanwar",
+    role: "DUSU Vice President Candidate",
   },
   {
-    text: "Outstanding concert coverage! They captured the energy and emotion perfectly.",
-    name: "Mike Chen",
-    role: "Music Producer",
+    text: "Outstanding campaign coverage! They captured the energy and emotion perfectly.",
+    name: "Tushar Dedha",
+    role: "DUSU President",
   },
 ];
 
