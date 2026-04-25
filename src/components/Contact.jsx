@@ -1,7 +1,40 @@
 import React from "react";
 import { Mail, Phone, MapPin, Instagram, Youtube, Linkedin, Send } from "lucide-react";
-
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 const Contact = () => {
+   const form = useRef();
+
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_ynd7xra",
+      "template_xxw80os",
+      form.current,
+      {
+        publicKey: "e4ffr4np0yqV3QVuY",
+      }
+    )
+    .then(
+      () => {
+        alert("Message sent successfully!");
+        form.current.reset();
+      },
+      (error) => {
+        alert("Failed to send message!");
+        console.log(error);
+      }
+    );
+};
+
+
+
+
+
+
+
   return (
     <section className="bg-black text-white py-24 px-6 md:px-12">
       <div className="max-w-7xl mx-auto">
@@ -21,12 +54,12 @@ const Contact = () => {
         <div className="grid gap-10 lg:grid-cols-2">
 
           {/* ===== Form ===== */}
-          <form className="space-y-6">
+          <form ref={form} onSubmit={sendEmail} className="space-y-6">
 
             {/* Name */}
             <div>
               <label className="text-sm text-gray-300 mb-2 block">NAME *</label>
-              <input
+              <input name="name"
                 type="text"
                 className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500"
               />
@@ -35,7 +68,7 @@ const Contact = () => {
             {/* Email */}
             <div>
               <label className="text-sm text-gray-300 mb-2 block">EMAIL *</label>
-              <input
+              <input name="email"
                 type="email"
                 className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500"
               />
@@ -44,7 +77,7 @@ const Contact = () => {
             {/* Phone */}
             <div>
               <label className="text-sm text-gray-300 mb-2 block">PHONE</label>
-              <input
+              <input name="phone"
                 type="text"
                 className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500"
               />
@@ -55,12 +88,12 @@ const Contact = () => {
               <label className="text-sm text-gray-300 mb-2 block">
                 PROJECT TYPE *
               </label>
-              <select className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500">
+              <select name="project" className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500">
                 <option>Select a project type</option>
                 <option>Event Photography</option>
                 <option>Videography</option>
-                <option>Brand Content</option>
-                <option>Film Production</option>
+                <option>Social Media Management</option>
+                <option>Political Campaign</option>
               </select>
             </div>
 
@@ -69,7 +102,7 @@ const Contact = () => {
               <label className="text-sm text-gray-300 mb-2 block">
                 MESSAGE *
               </label>
-              <textarea
+              <textarea name="message"
                 rows="5"
                 className="w-full bg-[#111827] border border-gray-800 rounded-lg px-4 py-3 outline-none focus:border-red-500"
               ></textarea>

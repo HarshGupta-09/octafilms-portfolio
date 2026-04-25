@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const categories = ["All Work", "EVENTS", "CONCERTS", "FILMS"];
+const categories = ["All Work", "EVENTS", "POLITICAL CAMPAIGN", "FILMS"];
 
 const projects = [
   {
