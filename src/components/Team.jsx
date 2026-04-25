@@ -22,7 +22,7 @@ const Team = () => {
           {/* Image */}
           <div className="w-full md:w-1/2 rounded-xl overflow-hidden aspect-[4/3] bg-gray-900">
             <img
-              src="/photos/Team/agam.jpeg"
+              src="/photos/agam.webp"
               alt="Agam Rai"
               className="w-full h-full object-cover object-center 
               transition duration-500 hover:scale-105"
@@ -56,7 +56,7 @@ const Team = () => {
           {/* Image */}
           <div className="w-full md:w-1/2 rounded-xl overflow-hidden aspect-[4/3] bg-gray-900">
             <img
-              src="/photos/Team/new.jpeg"
+              src="/photos/shukla.webp"
               alt="Divyanshu Shukla"
               className="w-full h-full object-cover object-[center_top] 
               transition duration-500 hover:scale-105"
