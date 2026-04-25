@@ -8,84 +8,84 @@ const projects = [
     title: "Political Campaign",
     location: "",
     category: "EVENTS",
-    image: "/public/photos/_DSC0171 (1).jpg.jpeg",
+    image: "/photos/_DSC0171 (1).jpg.jpeg",
   },
   {
     id: 2,
     title: "Event Photography",
     location: "",
     category: "CONCERTS",
-    image: "/public/photos/new10.jpeg",
+    image: "/photos/new10.jpeg",
   },
   {
     id: 3,
     title: "Political Campaign",
     location: "",
     category: "CONCERTS",
-    image: "/public/photos/_DSC9687.jpg.jpeg",
+    image: "/photos/_DSC9687.jpg.jpeg",
   },
   {
     id: 4,
     title: "Political Campaign",
     location: "",
     category: "FILMS",
-    image: "/public/photos/new8.jpeg",
+    image: "/photos/new8.jpeg",
   },
   {
     id: 5,
     title: "Political Campaign",
     location: "",
     category: "EVENTS",
-    image: "/public/photos/IMG_0822.jpg.jpeg",
+    image: "/photos/IMG_0822.jpg.jpeg",
   },
   {
     id: 6,
     title: "Political Campaign",
     location: "",
     category: "FILMS",
-    image: "/public/photos/IMG_6697 (1).jpg.jpeg",
+    image: "/photos/IMG_6697 (1).jpg.jpeg",
   },
   {
     id: 7,
     title: "Political Campaign",
     location: "",
     category: "FILMS",
-    image: "/public/photos/point of view_Agam (12) (1).jpg.jpeg",
+    image: "/photos/point of view_Agam (12) (1).jpg.jpeg",
   },
   {
     id: 8,
     title: "Political Campaign",
     location: "",
     category: "FILMS",
-    image: "/public/photos/new1.jpg.jpeg",
+    image: "/photos/new1.jpg.jpeg",
   },
   {
     id: 9,
     title: "Event Photography",
     location: "",
     category: "FILMS",
-    image: "/public/photos/new9.jpeg",
+    image: "/photos/new9.jpeg",
   },
   {
     id: 10,
     title: "Event Photography",
     location: "",
     category: "FILMS",
-    image: "/public/photos/new3.jpeg",
+    image: "/photos/new3.jpeg",
   },
   {
     id: 11,
     title: "Event Photography",
     location: "",
     category: "FILMS",
-    image: "/public/photos/NEW4.jpeg",
+    image: "/photos/NEW4.jpeg",
   },
   {
     id: 12,
     title: "Event Photography",
     location: "",
     category: "FILMS",
-    image: "/public/photos/NEW7.jpeg",
+    image: "/photos/NEW7.jpeg",
   },
 ];
 
@@ -141,6 +141,7 @@ const Portfolio = () => {
                 src={item.image}
                 alt={item.title}
                 className="w-full h-72 object-cover transform group-hover:scale-110 transition duration-500"
+                loading="lazy"
               />
 
               {/* Overlay */}

@@ -43,7 +43,7 @@ const About = () => {
           {/* Image */}
           <div>
             <img
-              src="/public/about.jpeg"
+              src="/about.jpeg"
               alt="filmmaking"
               className="rounded-xl w-full object-cover hover:scale-105 transition duration-500"
             />
