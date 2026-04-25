@@ -17,15 +17,15 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4">
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
+              <a target="_blank" href="https://www.instagram.com/octafilms.productions" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                 <Instagram size={18} />
-              </div>
+              </a>
               <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                 <Youtube size={18} />
               </div>
-              <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
+              {/* <div className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                 <Linkedin size={18} />
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -49,12 +49,12 @@ const Footer = () => {
 
               <div className="flex items-center gap-3">
                 <Mail className="text-red-500" size={18} />
-                <span>contact@octafilms.com</span>
+                <span>octafilms6@gmail.com</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <Phone className="text-red-500" size={18} />
-                <span>+91 XXXXX XXXXX</span>
+                <span>+91 8109124018</span>
               </div>
 
             </div>
@@ -70,8 +70,8 @@ const Footer = () => {
           {/* Developer Credit 🔥 */}
           <p>
             Developed by{" "}
-            <span className="text-red-500 font-medium">
-             @Harsh Gupta
+            <span  className="text-gray-200 font-medium">
+             @Harsh Gupta  <span className="text-gray-200">(harshgupta82003@gmail.com) </span>
             </span>
           </p>
 
