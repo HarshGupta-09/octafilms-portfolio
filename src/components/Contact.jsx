@@ -100,7 +100,7 @@ const Contact = () => {
                   <Mail className="text-red-500" />
                   <div>
                     <p className="text-sm text-gray-400">EMAIL</p>
-                    <p>contact@octafilms.com</p>
+                    <p>octafilms6@gmail.com</p>
                   </div>
                 </div>
 
@@ -129,17 +129,18 @@ const Contact = () => {
 
               <div className="flex gap-4">
 
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
+                <a target="_blank" href="https://www.instagram.com/octafilms.productions" className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                   <Instagram />
-                </div>
+                 
+                </a>
 
                 <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                   <Youtube />
                 </div>
 
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
+                {/* <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 hover:bg-red-600 transition cursor-pointer">
                   <Linkedin />
-                </div>
+                </div> */}
 
               </div>
             </div>
