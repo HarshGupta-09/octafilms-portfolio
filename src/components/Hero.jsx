@@ -40,13 +40,13 @@ We craft stories that stay.
         {/* Buttons */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4">
           
-          <button className="bg-red-600 cursor-pointer transition-all duration-200 ease-linear hover:bg-red-700 text-white px-7 py-4 rounded-full font-semibold">
+          <a href="#portfolio" className="bg-red-600 cursor-pointer transition-all duration-200 ease-linear hover:bg-red-700 text-white px-7 py-4 rounded-full font-semibold">
             Watch Our Work
-          </button>
+          </a>
 
-          <button className="border cursor-pointer transition-all duration-500 border-white text-white px-7 py-4 rounded-full font-semibold hover:bg-white hover:text-black">
+          <a  href="#contact" className="border cursor-pointer transition-all duration-500 border-white text-white px-7 py-4 rounded-full font-semibold hover:bg-white hover:text-black">
           Start a Project
-          </button>
+          </a>
 
         </div>
       </div>
