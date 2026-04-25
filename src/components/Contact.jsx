@@ -111,7 +111,7 @@ const sendEmail = (e) => {
             {/* Button */}
             <button
               type="submit"
-              className="w-full bg-red-600 hover:bg-red-700 transition text-white py-3 rounded-full font-semibold flex items-center justify-center gap-2"
+              className="w-full cursor-pointer bg-red-600 hover:bg-red-700 transition text-white py-3 rounded-full font-semibold flex items-center justify-center gap-2"
             >
               <Send size={18} />
               SEND MESSAGE
